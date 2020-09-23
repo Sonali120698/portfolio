@@ -1,23 +1,22 @@
 /*  Header start */
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Grandstander', cursive;
-    
 }
 
 a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
 header {
     width: 100%;
     height: 100vh;
-    background-color: red;
-    background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
-    position: relative;  
+    background: linear-gradient( 109.6deg, rgba(48, 207, 208, 1) 11.2%, rgba(51, 8, 103, 1) 92.5%);
+    position: relative;
 }
 
 nav {
@@ -27,71 +26,97 @@ nav {
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    padding-top: 17px;
 }
 
-.logo a img{
+/* .logo a img{
     font-size: 1.6rem;
     padding: 12px 26px;
     border-radius: 50px 20px;
     text-transform: uppercase;
-    height: 50px;
+    height: 50px; } */
 
-}
+.logo:hover {}
 
-
-.logo a{
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    /* background-color:rgb(40, 185, 185); */
+.logo a {
+    font-size: 22px;
+    background: transparent;
     padding: 12px 26px;
-    font-style: 14px;
-    font-weight:500;
     border-radius: 50px 20px;
     text-transform: uppercase;
+    color: rgba(51, 8, 103, 1);
+    font-weight: bold;
+    border-right: 1px solid white;
+}
+
+.logo a:hover {
+    color: white;
+    font: 14px;
+    font-weight: bold;
+    background: linear-gradient( 109.6deg, rgba(48, 207, 208, 1) 11.2%, rgba(51, 8, 103, 1) 92.5%);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
 }
 
 .menu ul li {
     list-style: none;
     display: inline-block;
-    background-color:rgb(80, 181, 221);
+    background-color: rgb(80, 181, 221);
     padding: 5px 10px;
     font-style: 14px;
-    font-weight:500;
+    font-weight: 500;
     border-radius: 50px 20px;
     text-transform: uppercase;
+    border-bottom: 2px solid #330968;
+    border-right: 2px solid #330968;
 }
 
 .menu ul li a {
     text-transform: capitalize;
 }
 
-.active, ul li a:hover{
+.menu ul li:hover {
+    background: linear-gradient( 109.6deg, rgba(48, 207, 208, 1) 11.2%, rgba(51, 8, 103, 1) 92.5%);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.menu ul li a:hover {
+    color: white;
+    font: 17px;
+    font-weight: bold;
+}
+
+.active, ul li a:hover {
     /* border-top: 2px solid yellow;
     border-bottom: 2px solid yellow; */
 }
 
 .contact {
-    background-color:rgba(51,8,103,1);
+    background-color: rgba(51, 8, 103, 1);
     padding: 12px 26px;
     font: 14px;
-    font-weight:500;
+    font-weight: 500;
     border-radius: 50px 20px;
     text-transform: capitalize;
     cursor: pointer;
 }
 
-.contact:hover{
-    background: white;
-} 
+.contact:hover {
+    background: linear-gradient( 109.6deg, rgba(48, 207, 208, 1) 11.2%, rgba(51, 8, 103, 1) 92.5%);
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
 
-.contact a:hover{
-    color : rgba(51,8,103,1);
-    font: 14px;
-    font-weight:bold;
-} 
+.contact a:hover {
+    color: white;
+    font: 17px;
+    font-weight: bold;
+}
+
 /*>>>>>>Center-content<<<<<<<*/
 
-.center_content{
+.center_content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,7 +124,7 @@ nav {
     text-align: center;
 }
 
-.center_content h1{
+.center_content h1 {
     color: #fff;
     font-size: 50px;
     text-transform: capitalize;
@@ -107,13 +132,13 @@ nav {
     margin-bottom: 10px;
 }
 
-.center_content h2{
+.center_content h2 {
     font-size: 25px;
     font-weight: 400;
     color: #fff;
 }
 
-.center_content .horizontalline{
+.center_content .horizontalline {
     content: "";
     width: 25px;
     height: auto;
@@ -123,4 +148,5 @@ nav {
     bottom: 0;
     margin-bottom: 10px;
 }
+
 /*  Header end */
