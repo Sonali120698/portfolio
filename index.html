@@ -16,9 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap"
       rel="stylesheet"
     />
-    </head>
+  </head>
   <body>
-    <header>
+    <header id="home">
       <nav class="navbar">
         <div class="logo">
           <a href="#" target="_blank">
@@ -29,8 +29,8 @@
 
         <div class="menu">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Resume</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -55,10 +55,37 @@
 
       <!-- <div class="home-image">
         <img src="./assets/images/homepage.jpg"></img>
-      </div> --> 
+      </div> -->
     </header>
 
-    <div class="social_network">
+    <main>
+      <div id="about">
+        <div style="padding: 70px">
+          <h1 style="font-size: 70px; text-align: center;color:white; border: 1px solid blue">Who Am I?</h1>
+        </div>
+        <div style="display: flex;flex-wrap: wrap;/* gap: 1px; */">
+          <div style="background: transparent;flex: 0 0 30%;text-align: center;padding: 25px;">
+            <img style="height: 348px;width: 257px; border-radius: 0.5em;" src="./assets/images/Spice_gallery.jpg">
+          </div>
+          <div style="background: transparent; flex: 70% 0 0">
+            <p style="text-align: justify;color: white;padding: 30px 20px;font-size: 20px;line-height: 1.4;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="social_network">
       <ul>
         <li>
           <a href="#">
@@ -92,7 +119,6 @@
         </li>
         </ul>
       </div>
-    </div>
-
+    </div> -->
   </body>
 </html>
