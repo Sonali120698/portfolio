@@ -161,6 +161,8 @@ nav {
     margin-bottom: 10px;
 }
 
+/* >>>>>>>>>Center Content End<<<<<<<<<< */
+
 /* .home-image{
     width:300px;
     height:200px;
@@ -170,6 +172,10 @@ nav {
     background-image:url(./assets/images/home-image.jpg);
     background-size: 50%;
 } */
+
+
+/* >>>>>>>>>Social Network Icons<<<<<<<<< */
+
 
 .social_network{
     margin:0;
@@ -309,18 +315,152 @@ nav {
     background: #e46880;
   }
 
+/* >>>>>>>>>>Social Network Icon End<<<<<<<<<< */
+
+/*>>>>>>>>>About section Start<<<<<<<<<<<<< */
+
 .about_title{
   border: 1px solid blue;
   margin: 10px;
   padding: 20px;
 }
 
+.heading{
+  padding: 70px;
+}
+
+.heading h1{
+  font-size: 70px;
+  text-align: center;
+  color:white;
+  border: 1px solid blue;
+}
+
+.body{
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 1px; */
+}
+
+.body .image{
+  background: transparent;
+  flex: 0 0 30%;
+  text-align: center;
+  padding: 25px;
+}
+
+.body .image img{
+  height: 348px;
+  width: 257px;
+  border-radius: 0.5em;
+}
+
+.body .intro{
+  background: transparent;
+  flex: 70% 0 0;
+}
+
+.body .intro p{
+  text-align: justify;
+  color: white;
+  padding: 30px 20px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+/* .details{
+  background-color: purple;
+  flex: 70% 0 0;
+  padding: 30px 20px;
+  font-size: 20px;
+  line-height: 3.4;
+}
+
+.details ul{
+  list-style-type: none;
+  text-align: justify;
+  color: white;
+}
+
+.details ul li{
+  width: 33%;
+  float: left;
+} */
+
+.body .details{
+  width: 100%;
+/* background-color:yellow; */
+/* -ms-flex:0 0 60%;
+flex: 0 0 60%;
+max-width: 60%; */
+flex-basis: 30%;
+padding: 20px;
+border: 1px solid black;
+}
+
+.body .details .row{
+  background:yellow;
+}
+
+/* .body .details .row .Skills{
+  background-color: purple;
+/* -ms-flex:0 0 40%; */
+/* flex: 0 0 40%;
+max-width: 40%; */
+
+.skills{
+  width: 100%;
+  flex-basis: 30%;
+  padding: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.skills h4{
+  width: 100%;
+  background-color: purple;
+  text-align: left;
+}
+
+.skills .list{
+  background-color: white;
+}
+
+/* .skills .list .h4{
+  width: 50%;
+  border: 1px solid white;
+  background-color: green;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+} */
+
+.skills .list .container {
+  width: 100%;
+  background-color: #ddd;
+  text-align: right;
+}
+
+.skills-html {
+  width: 90%; 
+  background-color: #4CAF50;
+}
+
+.skills-css {
+  width: 80%;
+  background-color: #2196F3;
+}
+.skills-js {
+  width: 65%; 
+  background-color: #f44336;
+}
+
+.skills-php {
+  width: 60%; 
+  background-color: yellow;
+}
 
 
-
-
-
-
-
-
-/*  Header end */
+/*>>>>>Header end<<<<<<<<< */
