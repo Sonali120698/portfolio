@@ -1,20 +1,25 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js">
-  <!--<![endif]-->
-
-  <head>
+  <!--<!
+  [endif]--><head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sonali-Portfolio</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+      @media print {
+        #ghostery-purple-box {
+          display: none !important;
+        }
+      }
+    </style>
     <link
-      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap"
+      rel="stylesheet"
+      href="http://127.0.0.1:5500/assets/css/style.css?_cacheOverride=1601925638739"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&amp;display=swap&amp;_cacheOverride=1601925638741"
       rel="stylesheet"
     />
   </head>
@@ -56,8 +61,8 @@
       </div>
 
       <!-- <div class="home-image">
-        <img src="./assets/images/homepage.jpg"></img>
-      </div> -->
+      <img src="./assets/images/homepage.jpg"></img>
+    </div> -->
     </header>
 
     <main>
@@ -172,7 +177,7 @@
           </div>
         </div>
       </div>
-
+      <hr />
       <div id="what-can-i-do">
         <div id="flex-box">
           <div class="container">
@@ -202,17 +207,13 @@
           </div>
         </div>
         <div class="heading">
-          <!--Positon : relative-->
           <h1>What can I do?</h1>
-          <!--Positon : absolute-->
         </div>
       </div>
-
+      <hr />
       <div id="my-blog">
         <div class="heading">
-          <!--Positon : relative-->
           <h1>Visit My Blogs</h1>
-          <!--Positon : absolute-->
         </div>
         <div id="flex-box">
           <div class="container">
@@ -260,41 +261,163 @@
           </div>
         </div>
       </div>
-    </main>
-    <!-- <div class="social_network">
-      <ul>
-        <li>
-          <a href="#">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <span> - Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <span> - Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-            <span> - Google+</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <span> - Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-dribbble" aria-hidden="true"></i>
-            <span> - Dribbble</span>
-          </a>
-        </li>
-        </ul>
+      <hr />
+      <div id="contact" style="background: black">
+        <form
+          id="contact_form"
+          action="#"
+          method="POST"
+          enctype="multipart/form-data"
+          style="
+            background: orange;
+            transform: translate(17px, 18px);
+            transform-box: view-box;
+          "
+        >
+          <div class="row">
+            <label class="required" for="name">Your name:</label><br />
+            <input
+              id="name"
+              class="input"
+              name="name"
+              type="text"
+              value=""
+              size="50"
+              placeholder="Example., Anna Brown"
+            /><br />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+
+          <div class="row">
+            <label class="required" for="email">Your email:</label><br />
+            <input
+              id="email"
+              class="input"
+              name="email"
+              type="text"
+              value=""
+              size="50"
+              placeholder="Example., annabrown@email.com"
+            /><br />
+            <span id="email_validation" class="error_message"></span>
+          </div>
+
+          <div class="row">
+            <label class="required" for="message">Your message:</label><br />
+            <textarea
+              id="message"
+              class="input"
+              name="message"
+              rows="7"
+              cols="30"
+              placeholder="Write something.."
+            ></textarea
+            ><br />
+            <span id="message_validation" class="error_message"></span>
+            <input id="submit_button" type="submit" value="Submit" />
+          </div>
+
+        
+        </form>
+
+        <div class="heading">
+          <h1>Beep Me</h1>
+        </div>
       </div>
-    </div> -->
+      <div id="banner" style="background-color: ivory; height: 100px"></div>
+    </main>
+
+    <footer
+      style="background: black; color: white; padding: 20px; text-align: center; border-top: 8px solid orange;"
+    >
+      <label> Copyright @ <b>Sonali Mahapatra </b> </label>
+    </footer>
+    <!-- <div class="social_network">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <span> - Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <span> - Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+          <span> - Google+</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <span> - Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-dribbble" aria-hidden="true"></i>
+          <span> - Dribbble</span>
+        </a>
+      </li>
+      </ul>
+    </div>
+  </div> -->
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
   </body>
 </html>
