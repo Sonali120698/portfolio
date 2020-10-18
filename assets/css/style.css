@@ -30,7 +30,7 @@ a {
 
 header, main {
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     position: relative;
 }
 
@@ -647,11 +647,11 @@ img {
   display:flex;
 }
 
-#contact .heading{
+/* #contact .heading{
  /* background-color: purple;
  background-color: black; */
  /* border: 2px solid white; */
-}
+
 
 #contact_form{
   width: 100%;
